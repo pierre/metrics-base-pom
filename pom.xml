@@ -9,7 +9,7 @@
     <groupId>com.ning</groupId>
     <artifactId>metrics.base-pom</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>metrics-base-pom</name>
     <description>Base pom for metrics projects</description>
     <url>http://github.com/pierre/metrics-base-pom</url>
@@ -61,7 +61,7 @@
         <jackson.version>1.9.1</jackson.version>
         <jetty.version>8.0.4.v20111024</jetty.version>
         <serialization.version>2.0.2</serialization.version>
-        <skeleton.version>0.0.7-SNAPSHOT</skeleton.version>
+        <skeleton.version>0.0.6</skeleton.version>
         <slf4j.version>1.6.3</slf4j.version>
     </properties>
     <prerequisites>
@@ -143,7 +143,7 @@
             <dependency>
                 <groupId>com.ning</groupId>
                 <artifactId>metrics.eventtracker-smile</artifactId>
-                <version>4.0.4-SNAPSHOT</version>
+                <version>4.0.4</version>
             </dependency>
             <dependency>
                 <groupId>com.ning</groupId>
@@ -385,7 +385,7 @@
             <dependency>
                 <groupId>org.apache.pig</groupId>
                 <artifactId>pig</artifactId>
-                <version>0.10.0-SNAPSHOT</version>
+                <version>0.9.1</version>
                 <exclusions>
                     <exclusion>
                         <groupId>commons-el</groupId>
