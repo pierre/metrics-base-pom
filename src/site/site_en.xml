@@ -18,8 +18,5 @@
     <body>
         <!-- Inherit this menu for sub modules. -->
         <menu ref="parent" inherit="top" />
-
-        <!-- Inherit this menu for sub modules. -->
-        <menu name="Sub Modules" ref="modules" inherit="bottom" />
     </body>
 </project>
