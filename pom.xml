@@ -764,6 +764,8 @@
                                 <exclude>lib/**</exclude>
                                 <!-- rat doesn't parse MIT -->
                                 <exclude>**/*.js</exclude>
+                                <!-- Ignore temporary files from shade plugin - required for multi-modules builds -->
+                                <exclude>**/dependency-reduced-pom.xml</exclude>
                             </excludes>
                         </configuration>
                     </execution>
