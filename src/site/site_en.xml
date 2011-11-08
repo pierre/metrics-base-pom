@@ -15,8 +15,4 @@
   ~ under the License.
   -->
 <project>
-    <body>
-        <!-- Inherit this menu for sub modules. -->
-        <menu ref="parent" inherit="top" />
-    </body>
 </project>
