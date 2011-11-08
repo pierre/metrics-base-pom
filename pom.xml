@@ -142,7 +142,7 @@
             <dependency>
                 <groupId>com.ning</groupId>
                 <artifactId>metrics.eventtracker-smile</artifactId>
-                <version>4.0.5</version>
+                <version>4.0.6</version>
             </dependency>
             <dependency>
                 <groupId>com.ning</groupId>
@@ -340,6 +340,10 @@
                         <artifactId>hsqldb</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>servlet-api</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>javax.servlet.jsp</groupId>
                         <artifactId>jsp-api</artifactId>
                     </exclusion>
@@ -459,6 +463,10 @@
                         <!-- We user jcl-over-slf4j -->
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>servlet-api</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>junit</groupId>
