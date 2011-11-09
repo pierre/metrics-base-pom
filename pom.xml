@@ -61,7 +61,7 @@
         <jersey.version>1.10</jersey.version>
         <jetty.version>8.0.4.v20111024</jetty.version>
         <serialization.version>2.0.2</serialization.version>
-        <skeleton.version>0.0.10</skeleton.version>
+        <skeleton.version>0.0.11</skeleton.version>
         <slf4j.version>1.6.3</slf4j.version>
     </properties>
     <prerequisites>
