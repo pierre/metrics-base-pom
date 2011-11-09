@@ -58,9 +58,10 @@
         <guava.version>10.0.1</guava.version>
         <guice.version>3.0</guice.version>
         <jackson.version>1.9.2</jackson.version>
+        <jersey.version>1.10</jersey.version>
         <jetty.version>8.0.4.v20111024</jetty.version>
         <serialization.version>2.0.2</serialization.version>
-        <skeleton.version>0.0.7</skeleton.version>
+        <skeleton.version>0.0.10</skeleton.version>
         <slf4j.version>1.6.3</slf4j.version>
     </properties>
     <prerequisites>
@@ -226,22 +227,22 @@
             <dependency>
                 <groupId>com.sun.jersey</groupId>
                 <artifactId>jersey-core</artifactId>
-                <version>1.9.1</version>
+                <version>${jersey.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.jersey</groupId>
                 <artifactId>jersey-json</artifactId>
-                <version>1.9.1</version>
+                <version>${jersey.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.jersey</groupId>
                 <artifactId>jersey-server</artifactId>
-                <version>1.9.1</version>
+                <version>${jersey.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.jersey.contribs</groupId>
                 <artifactId>jersey-guice</artifactId>
-                <version>1.9.1</version>
+                <version>${jersey.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>com.sun.jersey</groupId>
@@ -522,11 +523,23 @@
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>
                 <version>${jetty.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>servlet-api</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-servlet</artifactId>
                 <version>${jetty.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>servlet-api</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
@@ -776,6 +789,8 @@
                                 <exclude>**/*.js</exclude>
                                 <!-- Ignore temporary files from shade plugin - required for multi-modules builds -->
                                 <exclude>**/dependency-reduced-pom.xml</exclude>
+                                <!-- Ignore eventtracker default spool directory -->
+                                <exclude>.diskspool/**</exclude>
                             </excludes>
                         </configuration>
                     </execution>
