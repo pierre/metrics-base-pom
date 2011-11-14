@@ -547,6 +547,11 @@
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-xml</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.jdbi</groupId>
                 <artifactId>jdbi</artifactId>
                 <version>2.27</version>
