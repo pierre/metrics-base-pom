@@ -57,7 +57,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <guava.version>11.0.1</guava.version>
         <guice.version>3.0</guice.version>
-        <jackson.version>1.9.2</jackson.version>
+        <jackson.version>1.9.4</jackson.version>
         <jersey.version>1.10</jersey.version>
         <jetty.version>8.0.4.v20111024</jetty.version>
         <serialization.version>2.1.0</serialization.version>
