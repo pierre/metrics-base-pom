@@ -273,6 +273,11 @@
             </dependency>
             <dependency>
                 <groupId>com.ning.jetty</groupId>
+                <artifactId>ning-service-skeleton-jaxrs</artifactId>
+                <version>${skeleton.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ning.jetty</groupId>
                 <artifactId>ning-service-skeleton-log4j</artifactId>
                 <classifier>selfcontained</classifier>
                 <version>${skeleton.version}</version>
