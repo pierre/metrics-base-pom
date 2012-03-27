@@ -877,6 +877,7 @@
                                 <!-- Ignore eventtracker default spool directory -->
                                 <exclude>.diskspool/**</exclude>
                                 <exclude>dev/**</exclude>
+                                <exclude>.travis.yml</exclude>
                             </excludes>
                         </configuration>
                     </execution>
