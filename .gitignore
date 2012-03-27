@@ -2,6 +2,7 @@ target
 *.iml
 *.ipr
 *.iws
+.idea
 classes/*
 test-output/*
 release.properties
