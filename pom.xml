@@ -766,7 +766,8 @@
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>6.4</version>
+                <!-- 6.4 is broken with IDEA -->
+                <version>6.3.1</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
