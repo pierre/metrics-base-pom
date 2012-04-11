@@ -59,7 +59,7 @@
         <guice.version>3.0</guice.version>
         <jackson.version>1.9.4</jackson.version>
         <jersey.version>1.10</jersey.version>
-        <jetty.version>8.0.4.v20111024</jetty.version>
+        <jetty.version>8.1.2.v20120308</jetty.version>
         <serialization.version>2.1.0</serialization.version>
         <skeleton.version>0.0.20</skeleton.version>
         <slf4j.version>1.6.4</slf4j.version>
