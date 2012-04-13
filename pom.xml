@@ -63,8 +63,8 @@
         <jersey.version>1.12</jersey.version>
         <jetty.version>8.1.2.v20120308</jetty.version>
         <logback.version>1.0.1</logback.version>
-        <metrics.version>2.1.1</metrics.version>
-        <serialization.version>2.1.0</serialization.version>
+        <metrics.version>2.1.2</metrics.version>
+        <serialization.version>2.1.2</serialization.version>
         <skeleton.version>0.0.22</skeleton.version>
         <slf4j.version>1.6.4</slf4j.version>
     </properties>
