@@ -472,6 +472,16 @@
                 <version>${hadoop.version}</version>
                 <exclusions>
                     <exclusion>
+			<!-- Ignore transitive dependency on the older artifact, commons-beanutils:commons-beanutils-core is pulled in -->
+                        <groupId>commons-beanutils</groupId>
+                        <artifactId>commons-beanutils</artifactId>
+                    </exclusion>
+                    <exclusion>
+			<!-- commons-beanutils:commons-beanutils-core bundles commons-collections :( -->
+                        <groupId>commons-collections</groupId>
+                        <artifactId>commons-collections</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-el</groupId>
                         <artifactId>commons-el</artifactId>
                     </exclusion>
