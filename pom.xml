@@ -72,8 +72,8 @@
         <logback.version>1.0.1</logback.version>
         <metrics.version>2.1.2</metrics.version>
         <serialization.version>2.2.2</serialization.version>
-        <skeleton.version>0.0.22</skeleton.version>
-        <slf4j.version>1.6.4</slf4j.version>
+        <skeleton.version>0.1.3</skeleton.version>
+        <slf4j.version>1.6.6</slf4j.version>
     </properties>
     <prerequisites>
         <maven>3.0</maven>
