@@ -106,7 +106,7 @@
                 <version>1.5</version>
             </dependency>
             <dependency>
-		<!-- For hadoop-core and pig -->
+                <!-- For hadoop-core and pig -->
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
                 <version>3.1</version>
@@ -116,7 +116,7 @@
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
-		</exclusions>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -239,6 +239,16 @@
                 <groupId>com.ning</groupId>
                 <artifactId>metrics.serialization-hadoop</artifactId>
                 <version>${serialization.version}</version>
+                <exclusions><!-- Don't pull jackson from Hadoop -->
+                    <exclusion>
+                        <groupId>org.codehaus.jackson</groupId>
+                        <artifactId>jackson-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.codehaus.jackson</groupId>
+                        <artifactId>jackson-mapper-asl</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.ning</groupId>
@@ -472,12 +482,12 @@
                 <version>${hadoop.version}</version>
                 <exclusions>
                     <exclusion>
-			<!-- Ignore transitive dependency on the older artifact, commons-beanutils:commons-beanutils-core is pulled in -->
+            <!-- Ignore transitive dependency on the older artifact, commons-beanutils:commons-beanutils-core is pulled in -->
                         <groupId>commons-beanutils</groupId>
                         <artifactId>commons-beanutils</artifactId>
                     </exclusion>
                     <exclusion>
-			<!-- commons-beanutils:commons-beanutils-core bundles commons-collections :( -->
+            <!-- commons-beanutils:commons-beanutils-core bundles commons-collections :( -->
                         <groupId>commons-collections</groupId>
                         <artifactId>commons-collections</artifactId>
                     </exclusion>
